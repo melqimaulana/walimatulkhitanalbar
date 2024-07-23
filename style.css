@@ -1,0 +1,250 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ededed;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; 
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.content {
+    max-width: 600px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%; 
+    min-height: 100vh; 
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+    display: block;
+    margin: 0 auto;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #126868;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0f4b4b;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.countdown-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    min-width: 50px;
+    color: #fff;
+}
+
+.header {
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.waktu-tempat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.waktu-tempat .waktu,
+.waktu-tempat .tanggal,
+.waktu-tempat .tempat {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.waktu-tempat .tempat a {
+    color: white;
+    text-decoration: none;
+}
+
+.waktu-tempat p {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.acara {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.acara p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.acara ul {
+    list-style: none;
+    padding: 0;
+}
+
+.acara li {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.penutup {
+    text-align: center;
+}
+
+.penutup h1 {
+    font-size: 0.9375rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.penutup p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .header p {
+        font-size: 18pxrem;
+        padding-bottom: 10px;
+    }
+
+    .waktu-tempat p {
+        font-size: 15px;
+    }
+
+    .waktu-tempat i {
+        font-size: 20px;
+    }
+
+    .acara p, .acara li {
+        font-size: 15px;
+    }
+
+    .penutup h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+
+    .penutup p {
+        font-size: 16px;
+    }
+
+    .page {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.6); 
+    }
+}
+
+@keyframes imgFloat {
+    50% {
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
